@@ -6,7 +6,7 @@ TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
+To install 'lbuckley_palindrome', add this line to your application's Gemfile:
 
 ```ruby
 gem 'lbuckley_palindrome'
@@ -22,7 +22,21 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+`lbuckley_palindrome` adds a `palindrome?` method to the `String` class, and can be used as follows:
+
+```
+$ irb
+>> require 'lbuckley_palindrome'
+>> "honey badger".palindrome?
+=> false
+>> "deified".palindrome?
+=> true
+>> "Able was I, ere I saw Elba.".palindrome?
+=> true
+>> phrase = "Madam, I'm Adam."
+>> phrase.palindrome?
+=> true
+```
 
 ## Development
 
@@ -32,4 +46,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lbuckley_palindrome.
+Bug reports and pull requests are welcome on GitHub at https://github.com/leahbuckley/lbuckley_palindrome.

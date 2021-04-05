@@ -5,8 +5,11 @@ require_relative "lbuckley_palindrome/version"
 module LbuckleyPalindrome
 
   # Returns true for a palindrome, false otherwise.
+
   def palindrome?
-  	processed_content == processed_content.reverse
+    return false if processed_content.empty?
+    
+    processed_content == processed_content.reverse
   end
 
   private

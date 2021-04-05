@@ -28,4 +28,10 @@ class LbuckleyPalindromeTest < Minitest::Test
   	assert 12321.palindrome?
   end
 
+  def test_empty_space_not_palindrome
+    refute "   ".palindrome?
+    refute "".palindrome?
+    refute "\n".palindrome?
+  end
+
 end
